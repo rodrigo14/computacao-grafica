@@ -10,15 +10,6 @@
 int main(int argc, char *argv[]) {
 	Mesh mesh = New_Mesh();
 	Load_Mesh(&mesh, fp);
-	Resize_Mesh(&mesh);
-
-	int indexPointA, indexPointB, indexPointC, trash;
-	for (int i=0; i<mesh.nface; i++) {
-		fscanf(fp, "%d %d %d %d", &trash, &indexPointA, &indexPointB, &indexPointC);
-		mesh.list_faces[i].v1 = indexPointA;
-		mesh.list_faces[i].v2 = indexPointB;
-		mesh.list_faces[i].v3 = indexPointC;
-	}
 
 	/*
 	ShaderManager shader;
