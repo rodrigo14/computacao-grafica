@@ -1,3 +1,4 @@
 coelho
-codigo_aula15
-README.txt
+codigo_aula15/*
+*.txt
+*.pdf

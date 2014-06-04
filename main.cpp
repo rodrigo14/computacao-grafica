@@ -5,6 +5,7 @@
 #include <math.h>
 
 #include "CG.cpp"
+#include "mesh.cpp"
 #include "vec.h"
 
 int main(int argc, char *argv[]) {

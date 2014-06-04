@@ -78,14 +78,14 @@ int Load_Mesh(Mesh *mesh, FILE *fp) {
 			mesh->ZMin = mesh->list_vertex[i].z;
 	}
 
-	Resize_Mesh(&mesh);
+	Resize_Mesh(mesh);
 
 	int indexPointA, indexPointB, indexPointC, trash;
-	for (int i=0; i<mesh.nface; i++) {
+	for (int i=0; i<mesh->nface; i++) {
 		fscanf(fp, "%d %d %d %d", &trash, &indexPointA, &indexPointB, &indexPointC);
-		mesh.list_faces[i].v1 = indexPointA;
-		mesh.list_faces[i].v2 = indexPointB;
-		mesh.list_faces[i].v3 = indexPointC;
+		mesh->list_faces[i].v1 = indexPointA;
+		mesh->list_faces[i].v2 = indexPointB;
+		mesh->list_faces[i].v3 = indexPointC;
 	}
 }
 
