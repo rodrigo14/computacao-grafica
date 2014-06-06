@@ -4,13 +4,13 @@
 #include <GL/glut.h>	
 #include <GL/gl.h>
 #include <SDL/SDL.h>
+#include <GL/glew.h>
 
 typedef struct _point3D {
         float x, y, z;
 } point3D;
 
-/*
-struct Shader {
+typedef struct _Shader {
 	const char *filename;
 	GLenum type;
 	Glchar *source;
@@ -24,7 +24,8 @@ struct Shader {
 		source = _source;
 	}
 	
-};
+} Shader;
+/*
 */
 
 #endif
